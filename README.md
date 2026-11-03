@@ -1,3 +1,44 @@
+# ⌨️ Apple Desktop Bus QMK/VIAL Fork by Alectardy98
+
+**This Fork includes all source code and compiled assets to create a modified Apple Desktop Bus controller using an RP2040 to function with Vial remapping software. All credit to the original source by Matt Chesters**
+
+
+
+<img width="2880" height="2160" alt="IMG_6252" src="https://github.com/user-attachments/assets/2c56ad53-4733-4a3e-acc5-eab8e0e09504" />
+
+
+One change has been made to the files provided from the photo shown above. The USB-C port has been moved to the bottom side for parity with the 3D models provided by Matt Chesters
+
+Ordering Instructions:
+Inside the repo, you will find a folder called "Production_Files_JLCPCB"
+On JLCPCB, you will want to upload the GERBER-ADBv2.zip
+At the bottom, you can choose to assemble components on either the top side or both sides. It is recommended to assemble both sides for a no-solder solution for the USB port. If you choose to assemble the top only to save money in production, you can instead use the JST connection in tandem with a universal daughterboard.
+
+<img width="1271" height="433" alt="Assembly" src="https://github.com/user-attachments/assets/d94cc194-f03c-498e-8dd7-6780977764dc" />
+
+When selecting parts, you may see a duplicate part error; you can just acknowledge that both locations share the same part.
+
+<img width="1722" height="151" alt="Two items use the same port" src="https://github.com/user-attachments/assets/ac428a27-1339-4d58-819a-37cf2b53090f" />
+
+When the PCB arrives, you can decide to use the pre-compiled firmware called alectardy98_adbkal_vial.uf2
+When you initially plug the board into your computer, you will see a new USB device. You simply need to drag and drop the file into the root of that drive. Once the firmware is finished flashing, it should auto-eject, and you should be good to go
+
+<img width="4096" height="683" alt="PCB Top" src="https://github.com/user-attachments/assets/1de3590b-7372-4ad2-98df-0ca6fd144bf9" />
+<img width="4096" height="683" alt="PCB Bottom" src="https://github.com/user-attachments/assets/19bc68fb-3fe4-48bf-b14d-4f6d95274461" />
+
+## ✍️ Aknolagments
+This project was only made possible due to contributions made by magic_shiba
+
+## ⚠️ Disclaimer
+This project has been verified as operational by Alectardy98; the new revision with USB-C flipped to the bottom side of the PCB has not been ordered or tested. This software is released without guarantee.
+
+
+# All information below is from the original creator, Matt Chesters
+.
+.
+.
+
+
 # ⌨️ Apple Desktop Bus Keyboard modernization project
 [![Apple Desktop Bus Keyboard modification video](https://img.youtube.com/vi/NW_LLVD3R3c/0.jpg)](https://www.youtube.com/watch?v=NW_LLVD3R3c)
 
